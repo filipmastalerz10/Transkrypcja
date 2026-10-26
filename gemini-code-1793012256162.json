@@ -1,0 +1,15 @@
+{
+  "name": "Transkrypcja Wykładów",
+  "short_name": "Notatki Audio",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f4f7",
+  "theme_color": "#007aff",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3233/3233481.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
