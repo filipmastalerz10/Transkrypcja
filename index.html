@@ -19,10 +19,6 @@
         .row { display: flex; gap: 10px; }
         .row button { background: #34c759; }
         #status { text-align: center; font-size: 14px; color: #666; margin-bottom: 10px; font-weight: 500;}
-        
-        /* Styl dla naszej nowej ramki informacyjnej */
-        .help-box { background: #f9f9f9; border: 1px dashed #ccc; padding: 12px; border-radius: 8px; margin-top: -5px; margin-bottom: 15px; font-size: 13px; color: #555; text-align: center; line-height: 1.4; }
-        .help-box a { color: #007aff; font-weight: bold; text-decoration: none; }
     </style>
 </head>
 <body>
@@ -31,13 +27,6 @@
         
         <input type="text" id="apiKey" placeholder="Wklej klucz API Groq">
         <input type="file" id="audioFile" accept=".m4a, .mp3, .wav, audio/*">
-        
-        <!-- Nowa sekcja informacyjna -->
-        <div class="help-box">
-            Maksymalny rozmiar pliku to 25 MB.<br>
-            Jeśli Twój wykład waży więcej, <a href="https://www.freeconvert.com/audio-compressor" target="_blank">skompresuj go tutaj</a><br>
-            (W Ustawieniach ⚙️ wybierz <b>Target a file size</b> ➔ <b>24 MB</b>).
-        </div>
         
         <button id="transcribeBtn">Rozpocznij Transkrypcję</button>
         <div id="status"></div>
