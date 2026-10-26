@@ -103,12 +103,11 @@
                     body: formData
                 });
 
-                if (!response.ok) throw new Error("Błąd API: " + response.statusText);
-
-                const data = await response.json();
-                resultText.value = data.text;
-                statusDiv.innerText = "Gotowe!";
-            } catch (error) {
+                if (!response.ok) {
+    const errorDetails = await response.text();
+    throw new Error("Błąd " + response.status + ": " + errorDetails);
+}
+ catch (error) {
                 statusDiv.innerText = "Wystąpił błąd.";
                 alert(error.message);
             } finally {
