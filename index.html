@@ -71,7 +71,7 @@
             statusDiv.innerText = "Przesyłanie i przetwarzanie (model Whisper-large-v3)...";
 
             const formData = new FormData();
-            formData.append("file", file);
+            formData.append("file", file, "wyklad.mp3");
             formData.append("model", "whisper-large-v3");
             formData.append("language", "pl");
 
